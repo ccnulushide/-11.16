@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function shallowCopy(params) {
+
+        }
+        let params = { a: 1, b: { c: 1 } }
+        let newObj = shallowCopy(params)
+        params.a = 222
+        params.b.c = 666
+        console.log(params);
+        console.log(newObj);
+    </script>
+</body>
+
+</html>

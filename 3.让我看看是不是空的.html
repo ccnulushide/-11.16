@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var isEmpty = function(obj) {
+    if (obj === null || obj === undefined || obj === ''){
+        return true;
+    }
+    else{
+        return false;
+    }
+};
+    obj = {"x":5,"y":42}
+    console.log(isEmpty(obj))
+    obj = {}
+    console.log(isEmpty(obj))
+    obj = [null, false, 0]
+    console.log(isEmpty(obj))
+    </script>
+</body>
+</html>
